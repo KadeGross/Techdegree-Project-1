@@ -31,9 +31,7 @@ def start_game(best_score):
         attempt_count += 1
         try:
             player_guess = int(input(f"Guess an integer within the range of {lowest_num} through {highest_num}: "))
-            if player_guess == -0:
-                print("You're silly, -0 doesn't exist! Or does it?")
-            elif player_guess < lowest_num or player_guess > highest_num:
+            if player_guess < lowest_num or player_guess > highest_num:
                 print(f"This number is outside the guessing range.")
             else:
                 if player_guess < generated_number:
